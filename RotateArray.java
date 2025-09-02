@@ -24,4 +24,23 @@ public class RotateArray
     System.out.println(Arrays.toString(result));
 
 }
+
 }
+
+//using lambda expression
+import java.util.*;
+import java.util.stream.*;
+
+public class RotateArrayOneLine {
+    public static void main(String[] args) {
+        int[] arr = {1, 2, 3, 4, 5, 6, 7};
+        int k = 3, n = arr.length;
+        System.out.println(Arrays.toString(
+            IntStream.range(0, n).map(i -> arr[(i + n - k) % n]).toArray()
+        ));
+    }
+}
+
+
+
+
