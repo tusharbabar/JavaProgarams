@@ -4,19 +4,19 @@ public class FindMissingNumArray
 {
 	public static void main(String x[])
 	{
-		Scanner sc=new Scanner(System.in);	//input Statement
-		int a[]=new int[7];		//Declare Array Size
+		Scanner sc=new Scanner(System.in);	
+		int a[]=new int[7];		
 		System.out.println("Enter Array Elements");
 		
 		for(int i=0;i<a.length;i++)
 		{
-			a[i]=s.nextInt();
+			a[i]=sc.nextInt();
 		}
 		for(int i=0;i<a.length;i++)
 		{
 			for(int j=i;j<a.length;j++)
 			{
-				if(ar[i]>a[j])    //Sorting Array
+				if(a[i]>a[j])    //Sorting Array
 				{
 					int temp=a[i];
 					a[i]=a[j];
@@ -40,6 +40,6 @@ public class FindMissingNumArray
 		
 		}
 		
-		System.out.println(" Missing number:"+min);//print statement Smallest Element
+		System.out.println(" Missing number:"+min);
 	}
 }
